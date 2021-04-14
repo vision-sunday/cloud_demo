@@ -1,5 +1,3 @@
-package generator;
-
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -60,6 +58,7 @@ public class MybatisPlusAutoGenerator {
 
             // 包配置
             PackageConfig pc = new PackageConfig();
+            //springcloud_api SYS_ACCOUNT
             pc.setModuleName(scanner("模块名"));
             pc.setParent("com.syt");
             pc.setMapper("dao");
