@@ -1,0 +1,15 @@
+server:
+  port: 7001
+spring:
+  freemarker:
+    prefer-file-system-access: false
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #表示不向eureka服务中心注册自己
+    fetch-registry: false #表示自己为注册中心
+    #service-url: defa #注册中心页面的地址
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/
+
